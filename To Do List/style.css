@@ -1,0 +1,430 @@
+.body-row {
+    font-family: 'Marck Script', cursive;
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: #fcfcff;
+}
+
+.row1 {
+    height: 50px;
+}
+
+.card-row {
+    font-family: 'Shantell Sans', cursive;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-des {
+    font-family: 'Shantell Sans', cursive;
+    font-size: 16px;
+    color: #212121;
+}
+
+span {
+    font-family: 'Shantell Sans', cursive;
+    font-size: 20px;
+}
+
+.opaque {
+    opacity: 0.5;
+}
+
+.done {
+    background-color: transparent;
+    border: none;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-square {
+    opacity: 0.5;
+    font-size: 20px;
+}
+
+.fa-square-check {
+    font-size: 20px;
+}
+
+.cat-ico {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+.done-container {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.done-container i {
+    margin-right: 10px;
+}
+
+.fa-ellipsis {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+h2.f2 {
+    font-family: 'Shantell Sans', cursive;
+    font-size: 32px;
+    margin-left: 3%;
+}
+
+form {
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.f2 {
+    font-family: 'Shantell Sans', cursive;
+    font-size: 24px;
+}
+
+#task-name {
+    margin-top: 3%;
+    width: 92%;
+    border-radius: 30px;
+    border: none;
+    background-color: #d0e4f7;
+    font-size: 20px;
+    padding: 4% 4%;
+    font-family: 'Shantell Sans', cursive;
+}
+
+i {
+    font-size: 28px;
+}
+
+.submit-btn {
+    font-family: 'Shantell Sans', cursive;
+    margin-top: 13%;
+    width: 100%;
+    background-color: #d0e4f7;
+    border-radius: 30px;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#addCategory {
+    font-family: 'Shantell Sans', cursive;
+    width: 90%;
+    background-color: #d0e4f7;
+    border-radius: 30px;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.task-head {
+    color: #212121;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popup-content {
+    background-color: #c5d7e9;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%;
+    height: 25%;
+    position: relative;
+    border-radius: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    background-color: transparent;
+    border: none;
+}
+
+#warning-message {
+    display: none;
+    color: red;
+    text-align: center;
+    font-family: 'Shantell Sans', cursive;
+    font-size: 16px;
+}
+
+#category {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-item {
+    width: 85%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: background-color 0.3s;
+    font-family: 'Shantell Sans', cursive;
+    font-size: 18px;
+}
+
+.list-item:hover {
+    background-color: #d0e4f7;
+}
+
+.list-item__circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.list-item__name {
+    flex: 1;
+}
+
+.list-item__trash {
+    display: none;
+}
+
+.list-item:hover .list-item__trash {
+    display: block;
+    color: #000;
+    background-color: transparent;
+    border: none;
+}
+
+.list-item__trash:hover {
+    color: #000;
+    background-color: transparent;
+    border: none;
+}
+
+.trash-button {
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+}
+
+.left {
+    flex-basis: 20%;
+}
+
+.right {
+    flex-basis: 80%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.card {
+    background-color: #fff9de;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.taskPrompt {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.content {
+    background-color: #c5d7e9;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%;
+    height: 50%;
+    position: relative;
+    border-radius: 20px;
+}
+
+#taskName {
+    margin-top: 3%;
+    width: 92%;
+    border-radius: 30px;
+    border: none;
+    background-color: #d0e4f7;
+    font-size: 20px;
+    padding: 4% 4%;
+    font-family: 'Shantell Sans', cursive;
+}
+
+#taskDesc {
+    resize: none;
+    margin-top: 3%;
+    width: 92%;
+    border-radius: 30px;
+    border: none;
+    background-color: #d0e4f7;
+    font-size: 20px;
+    padding: 4% 4%;
+    font-family: 'Shantell Sans', cursive;
+}
+
+#task-message {
+    display: none;
+    color: red;
+    text-align: center;
+    font-family: 'Shantell Sans', cursive;
+    font-size: 16px;
+}
+
+.addBtn {
+    background-color: transparent;
+    border: none;
+}
+
+#catList {
+    margin-top: 3%;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    background-color: #d0e4f7;
+    font-size: 20px;
+    padding: 4% 4%;
+    font-family: 'Shantell Sans', cursive;
+}
+
+#disabled {
+    color: #000;
+    opacity: 0.5;
+    height: 100px;
+}
+
+.options-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.options-menu button {
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+}
+
+.options-menu button:hover {
+    background-color: #eee;
+}
+
+.hidden {
+    display: none;
+}
+
+.edit {
+    font-size: 20px;
+}
+
+.deleteTask {
+    font-size: 20px;
+}
+
+.options-btn {
+    background-color: transparent;
+    border: none;
+    margin-left: 10px;
+}
+
+.opt-container {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.card-title {
+    font-family: 'Shantell Sans', cursive;
+    color: #212121;
+    font-size: 30px;
+    font-weight: bold;
+    width: 100%;
+    background-color: #f2ecd2;
+    border: none;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card-desc {
+    font-family: 'Shantell Sans', cursive;
+    color: #212121;
+    font-size: 16px;
+    font-weight: bold;
+    width: 95%;
+    background-color: #f2ecd2;
+    border: none;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+.image-container {
+    position: absolute;
+    bottom: 1%;
+    width: 86%
+}
+
+img {
+    width: 15%
+}

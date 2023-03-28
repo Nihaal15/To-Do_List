@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>To Do List </title>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/9e5d79e3bd.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Shantell+Sans&display=swap"
+          rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="row1">
+    <header class="body-row" id="body">
+        <h1 class="body1">todo</h1>
+        <button class="addBtn" onclick="taskPrompt()"><i class="fa-solid fa-plus"></i></button>
+    </header>
+</div>
+<div class="container">
+    <div class="left">
+        <div id="category-list">
+            <ul id="category">
+            </ul>
+        </div>
+        <br>
+        <button id="addCategory" onclick="addCatFunc()">Add Category</button>
+        <div class="image-container">
+            <img alt="boy-emote" src="Assets/Afterclap-4.png">
+        </div>
+    </div>
+    <div class="right">
+        <div class="grid-container" id="grid-container">
+        </div>
+    </div>
+</div>
+<div class="popup" id="popup-form">
+    <div class="popup-content">
+        <button class="close" onclick="closeCatFunc()"><i class="fa-solid fa-xmark"></i></button>
+        <h2 class="f2">Add Category</h2>
+        <form autocomplete="off">
+            <label class="f2" for="task-name">Name</label>
+            <br>
+            <input id="task-name" maxlength="40" name="task-name" placeholder="Enter Category" type="text">
+            <br>
+            <button class="submit-btn" id="submit-btn" onclick="addCat()" type="button">Add</button>
+            <p id="warning-message"></p>
+        </form>
+    </div>
+</div>
+
+<div class="taskPrompt" id="taskPrompt">
+    <div class="content">
+        <button class="close" onclick="closeTask()"><i class="fa-solid fa-xmark"></i></button>
+        <h2 class="f2">Add Task</h2>
+        <form autocomplete="off">
+            <label class="f2" for="taskName">Task</label>
+            <br>
+            <input id="taskName" maxlength="40" name="taskName" placeholder="Task Name" type="text">
+            <br>
+            <br>
+            <label class="f2" for="taskDesc">Description</label>
+            <br>
+            <textarea id="taskDesc" name="taskDesc" placeholder="Task Description" rows="3"></textarea>
+            <br>
+            <br>
+            <label class="f2" for="catList">Category</label>
+            <br>
+            <select id="catList" name="taskCat">
+            </select>
+            <br>
+            <button class="submit-btn" id="addTask" onclick="addTaskFunc()" type="button">Add</button>
+            <p id="task-message"></p>
+        </form>
+    </div>
+</div>
+
+<script src="script.js" type="text/javascript"></script>
+</body>
+</html>
